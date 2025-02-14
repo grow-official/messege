@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat on WhatsApp</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+        body { background-color: #e5ddd5; display: flex; justify-content: center; align-items: center; height: 100vh; }
+        .container { text-align: center; background: #ffffff; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); }
+        .whatsapp-logo { width: 80px; animation: bounce 1s infinite alternate; }
+        h2 { color: #075e54; margin: 10px 0; }
+        p { color: #128c7e; font-size: 16px; margin-bottom: 20px; }
+        .chat-box { background: #dcf8c6; padding: 10px; border-radius: 10px; display: inline-block; margin-bottom: 15px; animation: fadeIn 1s ease-in-out; }
+        .cta-button { background: #25d366; color: white; padding: 12px 25px; font-size: 18px; border: none; border-radius: 5px; cursor: pointer; text-decoration: none; display: inline-block; transition: 0.3s; }
+        .cta-button:hover { background: #1ebe5d; }
+        @keyframes bounce { from { transform: translateY(0); } to { transform: translateY(-5px); } }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-logo">
+        <h2>Start Chat on WhatsApp</h2>
+        <div class="chat-box">
+            <p><strong>Hi there! 👋</strong><br> Blue tick ke liye message kro 👇</p>
+        </div>
+        <button class="cta-button" onclick="redirectToWhatsApp()">Chat Now</button>
+    </div>
+
+    <script>
+        function redirectToWhatsApp() {
+            window.location.href = "https://wa.me/message/S7A34JSQZ77XH1";
+        }
+    </script>
+
+</body>
+</html>
