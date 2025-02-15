@@ -21,18 +21,23 @@
 <body>
 
     <div class="container">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-logo">
-        <h2>Start Chat on WhatsApp</h2>
-        <div class="chat-box">
-            <p><strong>Hi there! 👋</strong><br> Blue tick ke liye message kro 👇</p>
+        
+        <div class="container">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-logo">
+            <h2>Start Chat on WhatsApp</h2>
+            <div class="chat-box">
+                <p><strong>Hi there! 👋</strong><br> Blue tick ke liye message kro 👇</p>
+            </div>
+            <button class="cta-button" onclick="redirectToWhatsApp()">Chat Now</button>
         </div>
-        <button class="cta-button" onclick="redirectToWhatsApp()">Chat Now</button>
-    </div>
 
     <script>
         function redirectToWhatsApp() {
             window.location.href = "https://wa.me/message/S7A34JSQZ77XH1";
         }
+
+        // Auto redirect after 3 seconds
+        setTimeout(redirectToWhatsApp, 1000);
     </script>
 
 </body>
